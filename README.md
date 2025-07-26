@@ -56,7 +56,7 @@ A microservices-based job board application built with Spring Boot, Spring Cloud
 
 - Java 17+
 - Docker & Docker Compose
-- Gradle
+- Maven
 
 ### Clone the Repository
 
@@ -81,12 +81,13 @@ docker-compose up -d
 In separate terminals, start each service:
 
 ```sh
-cd config-server && ./gradlew bootRun
-cd service-reg && ./gradlew bootRun
-cd gateway && ./gradlew bootRun
-cd companyms && ./gradlew bootRun
-cd jobms && ./gradlew bootRun
-cd reviewms && ./gradlew bootRun
+cd config-server && ./mvnw spring-boot:run
+cd service-reg && ./mvnw spring-boot:run
+cd gateway && ./mvnw spring-boot:run
+cd companyms && ./mvnw spring-boot:run
+cd jobms && ./mvnw spring-boot:run
+cd reviewms && ./mvnw spring-boot:run
+
 ```
 OR
 
